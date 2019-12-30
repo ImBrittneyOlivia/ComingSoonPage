@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+#main-info {
+  justify-content: center;
+  background: grey;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+#site-image {
+  display: flex;
+  flex: 1;
+}
+
+#mobile-site-image {
+  display: none;
+}
+
+header {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+header h2 {
+  font-family: "Baskervville", serif;
+}
+
+header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 5em;
+  color: white;
+  text-shadow: 1px 2px #cec6bc;
+}
+
+main p {
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  border-radius: 4px;
+  outline: none;
+  padding: 12px 20px;
+  margin: 8px 0;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  border: 3px solid #555;
+}
+
+input[type="submit"] {
+  background: #cec6bc;
+  border: none;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
+  outline: none;
+  padding: 12px 20px;
+}
+
+footer {
+  margin-top: 90px;
+  text-align: center;
+}
+
+footer h3 {
+  font-family: "Baskervville", serif;
+}
+
+.fa {
+  cursor: pointer;
+  margin: 20px;
+}
+
+.fa:hover {
+  color: white;
+}
+
+/* Mobile Screen */
+@media screen and (max-width: 900px) {
+  body {
+    flex-direction: column;
+  }
+
+  #main-info {
+    background: white;
+  }
+
+  header h1 {
+    color: black;
+    font-size: 3em;
+  }
+
+  #site-image {
+    display: none;
+  }
+
+  #mobile-site-image {
+    display: block;
+  }
+
+  #mobile-site-image img {
+    width: 100%;
+  }
+}
